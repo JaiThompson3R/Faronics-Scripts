@@ -1,3 +1,3 @@
 @echo off
-reg delete HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+powershell.exe -NoProfile -ExecutionPolicy bypass -command ECHO Y REG DELETE 'HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate'
 gpupdate /force
