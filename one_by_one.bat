@@ -1,3 +1,2 @@
 @echo off
-powershell.exe -NoProfile -ExecutionPolicy bypass -command ECHO Y REG DELETE 'HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate'
-gpupdate /force
+secedit /configure /cfg %WinDir\inf\defltbase.inf /db defltbase.sdb /verbose
