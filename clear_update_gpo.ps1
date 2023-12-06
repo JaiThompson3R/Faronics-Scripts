@@ -1,1 +1,1 @@
-Remove-Item 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\AU' -Force -Recurse
+Remove-Item 'HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate\' -Force -Recurse
